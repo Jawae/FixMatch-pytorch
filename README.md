@@ -108,7 +108,7 @@ python train.py --world-size 1 --rank 0 --multiprocessing-distributed --num_labe
 #### CIFAR100
 
 ```
-python train.py --world-size 1 --rank 0 --multiprocessing-distributed --num_labels 10000 --save_name cifar100_10000 --dataset cifar100 --num_classes 100 --widen_factor 8
+python train.py --world-size 1 --rank 0 --multiprocessing-distributed --num_labels 10000 --save_name cifar100_10000 --dataset cifar100 --num_classes 100 --widen_factor 8 --weight_decay 0.001
 ```
 To reproduce the results on CIFAR100, the `--widen_factor` has to be increased to `--widen_factor=8`. (see this [issue](https://github.com/google-research/fixmatch/issues/26) in the official repo.)
 
